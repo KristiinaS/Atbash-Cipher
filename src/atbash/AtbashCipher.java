@@ -11,14 +11,15 @@ public class AtbashCipher {
     public static void main(String[] args) {
 
         //Tähestiku sisestamine
-        Scanner ABC = new Scanner(System.in);
-        System.out.println("Sisesta tähestik");
-        String input = ABC.nextLine();
+        //Scanner ABC = new Scanner(System.in);
+        //System.out.println("Sisesta tähestik");
+        //String input = ABC.nextLine();
 
         //Tähestikust tühikute eemaldamine, teksti muutmine väikesteks tähtedeks
+
+        String input = "A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V W Õ Ä Ö Ü X Y";
         String ABCnew = input.trim().replaceAll("\\s", "").toLowerCase();
-        //String input = "abcd";
-        //System.out.println("Sisestatud tähestik on: " + ABCnew);
+        System.out.println("Tähestik on: " + ABCnew);
 
 
         //Tähestik listiks
@@ -84,3 +85,4 @@ public class AtbashCipher {
 
     }
 }
+
